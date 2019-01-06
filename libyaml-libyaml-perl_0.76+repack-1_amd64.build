@@ -1,0 +1,319 @@
+ dpkg-buildpackage -D -us -uc -ui -b -Jauto -Pnobiarch,nocheck,nodoc
+dpkg-buildpackage: info: source package libyaml-libyaml-perl
+dpkg-buildpackage: info: source version 0.76+repack-1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by gregor herrmann <gregoa@debian.org>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_auto_clean
+	make -j8 distclean
+make[1]: Entering directory '/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack'
+"/usr/bin/perl"  -e 'exit 0 unless chdir '\''LibYAML'\'';  system '\''make clean'\'' if -f '\''Makefile'\'';' --
+"/usr/bin/perl" "-MExtUtils::Manifest=fullcheck" -e fullcheck
+make[2]: Entering directory '/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/LibYAML'
+rm -f \
+  LibYAML.bso LibYAML.def \
+  LibYAML.exp LibYAML.x \
+  LibYAML.bs ../blib/arch/auto/YAML/XS/LibYAML/extralibs.all \
+  ../blib/arch/auto/YAML/XS/LibYAML/extralibs.ld Makefile.aperl \
+  *.a *.o \
+  *perl.core LibYAML.base \
+  LibYAML.bs LibYAML.bso \
+  LibYAML.c LibYAML.def \
+  LibYAML.exp LibYAML.o \
+  LibYAML_def.old MYMETA.json \
+  MYMETA.yml blibdirs.ts \
+  core core.*perl.*.? \
+  core.[0-9] core.[0-9][0-9] \
+  core.[0-9][0-9][0-9] core.[0-9][0-9][0-9][0-9] \
+  core.[0-9][0-9][0-9][0-9][0-9] libLibYAML.def \
+  mon.out perl \
+  perl perl.exe \
+  perlmain.c pm_to_blib \
+  pm_to_blib.ts so_locations \
+  tmon.out 
+rm -rf \
+  blib 
+mv Makefile Makefile.old > /dev/null 2>&1
+make[2]: Leaving directory '/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/LibYAML'
+rm -f \
+  LibYAML.bso LibYAML.def \
+  LibYAML.exp LibYAML.x \
+   blib/arch/auto/YAML/LibYAML/extralibs.all \
+  blib/arch/auto/YAML/LibYAML/extralibs.ld Makefile.aperl \
+  *.a *.o \
+  *perl.core MYMETA.json \
+  MYMETA.yml blibdirs.ts \
+  core core.*perl.*.? \
+  core.[0-9] core.[0-9][0-9] \
+  core.[0-9][0-9][0-9] core.[0-9][0-9][0-9][0-9] \
+  core.[0-9][0-9][0-9][0-9][0-9] libLibYAML.def \
+  mon.out perl \
+  perl perl.exe \
+  perlmain.c pm_to_blib \
+  pm_to_blib.ts so_locations \
+  tmon.out 
+rm -rf \
+  blib 
+mv Makefile Makefile.old > /dev/null 2>&1
+"/usr/bin/perl"  -e 'chdir '\''LibYAML'\'';  system '\''make -f Makefile.old realclean'\'' if -f '\''Makefile.old'\'';' --
+make[2]: Entering directory '/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/LibYAML'
+rm -f \
+  LibYAML.bso LibYAML.def \
+  LibYAML.exp LibYAML.x \
+  LibYAML.bs ../blib/arch/auto/YAML/XS/LibYAML/extralibs.all \
+  ../blib/arch/auto/YAML/XS/LibYAML/extralibs.ld Makefile.aperl \
+  *.a *.o \
+  *perl.core LibYAML.base \
+  LibYAML.bs LibYAML.bso \
+  LibYAML.c LibYAML.def \
+  LibYAML.exp LibYAML.o \
+  LibYAML_def.old MYMETA.json \
+  MYMETA.yml blibdirs.ts \
+  core core.*perl.*.? \
+  core.[0-9] core.[0-9][0-9] \
+  core.[0-9][0-9][0-9] core.[0-9][0-9][0-9][0-9] \
+  core.[0-9][0-9][0-9][0-9][0-9] libLibYAML.def \
+  mon.out perl \
+  perl perl.exe \
+  perlmain.c pm_to_blib \
+  pm_to_blib.ts so_locations \
+  tmon.out 
+rm -rf \
+  blib 
+mv Makefile Makefile.old > /dev/null 2>&1
+make[2]: [Makefile.old:530: clean] Error 1 (ignored)
+rm -f \
+  Makefile Makefile.old \
+  perl_libyaml.o LibYAML.o 
+rm -rf \
+   
+make[2]: Leaving directory '/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/LibYAML'
+"/usr/bin/perl"  -e 'chdir '\''LibYAML'\'';  system '\''make -f Makefile realclean'\'' if -f '\''Makefile'\'';' --
+rm -f \
+  Makefile Makefile.old 
+rm -rf \
+  YAML-LibYAML-0.76 
+No such file: LibYAML/api.c
+No such file: LibYAML/config.h
+No such file: LibYAML/dumper.c
+No such file: LibYAML/emitter.c
+No such file: LibYAML/loader.c
+No such file: LibYAML/parser.c
+No such file: LibYAML/reader.c
+No such file: LibYAML/scanner.c
+No such file: LibYAML/writer.c
+No such file: LibYAML/yaml.h
+No such file: LibYAML/yaml_private.h
+Not in MANIFEST: .pc/.quilt_patches
+Not in MANIFEST: .pc/.quilt_series
+Not in MANIFEST: .pc/.version
+Not in MANIFEST: .pc/applied-patches
+Not in MANIFEST: .pc/disable-update.sh.patch/LibYAML/Makefile.PL
+Not in MANIFEST: .pc/system-libyaml.patch/LibYAML/Makefile.PL
+Not in MANIFEST: .pc/system-libyaml.patch/LibYAML/perl_libyaml.c
+Not in MANIFEST: debian/changelog
+Not in MANIFEST: debian/compat
+Not in MANIFEST: debian/control
+Not in MANIFEST: debian/copyright
+Not in MANIFEST: debian/libyaml-libyaml-perl.docs
+Not in MANIFEST: debian/patches/disable-update.sh.patch
+Not in MANIFEST: debian/patches/series
+Not in MANIFEST: debian/patches/system-libyaml.patch
+Not in MANIFEST: debian/rules
+Not in MANIFEST: debian/source/format
+Not in MANIFEST: debian/tests/pkg-perl/smoke-files
+Not in MANIFEST: debian/tests/pkg-perl/use-name
+Not in MANIFEST: debian/upstream/metadata
+Not in MANIFEST: debian/watch
+make[1]: Leaving directory '/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack'
+   dh_clean
+	rm -f debian/debhelper-build-stamp
+	rm -rf debian/.debhelper/
+	rm -f -- debian/libyaml-libyaml-perl.substvars debian/files
+	rm -fr -- debian/libyaml-libyaml-perl/ debian/tmp/
+	find .  \( \( \
+		\( -path .\*/.git -o -path .\*/.svn -o -path .\*/.bzr -o -path .\*/.hg -o -path .\*/CVS -o -path .\*/.pc -o -path .\*/_darcs \) -prune -o -type f -a \
+	        \( -name '#*#' -o -name '.*~' -o -name '*~' -o -name DEADJOE \
+		 -o -name '*.orig' -o -name '*.rej' -o -name '*.bak' \
+		 -o -name '.*.orig' -o -name .*.rej -o -name '.SUMS' \
+		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
+		\) -exec rm -f {} + \) -o \
+		\( -type d -a -name autom4te.cache -prune -exec rm -rf {} + \) \)
+FAKEROOTKEY=1894244118 LD_LIBRARY_PATH= LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libfakeroot/libfakeroot-sysv.so debian/rules clean
+ debian/rules build
+dh build
+   dh_update_autotools_config
+   dh_autoreconf
+   dh_auto_configure
+	perl Makefile.PL INSTALLDIRS=vendor "OPTIMIZE=-g -O2 -fdebug-prefix-map=/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack=. -Wformat -march=native -pipe -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2" "LD=icc.pl -g -O2 -fdebug-prefix-map=/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack=. -Wformat -march=native -pipe -Wformat-security -Wl,-z,now"
+Checking if your kit is complete...
+Warning: the following files are missing in your kit:
+	LibYAML/api.c
+	LibYAML/config.h
+	LibYAML/dumper.c
+	LibYAML/emitter.c
+	LibYAML/loader.c
+	LibYAML/parser.c
+	LibYAML/reader.c
+	LibYAML/scanner.c
+	LibYAML/writer.c
+	LibYAML/yaml.h
+	LibYAML/yaml_private.h
+Please inform the author.
+Writing MYMETA.yml and MYMETA.json
+Generating a Unix-style Makefile
+Writing Makefile for YAML::LibYAML
+Writing MYMETA.yml and MYMETA.json
+   dh_auto_build
+	make -j8
+make[1]: Entering directory '/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack'
+make[2]: Entering directory '/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/LibYAML'
+Running Mkbootstrap for LibYAML ()
+icc.pl -c  -I. -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fwrapv -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -g -O2 -fdebug-prefix-map=/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack=. -Wformat -march=native -pipe -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC "-I/usr/lib/x86_64-linux-gnu/perl/5.28/CORE"  -DHAVE_CONFIG_H perl_libyaml.c
+cp lib/YAML/LibYAML.pod blib/lib/YAML/LibYAML.pod
+cp lib/YAML/XS.pod blib/lib/YAML/XS.pod
+cp lib/YAML/XS.pm blib/lib/YAML/XS.pm
+cp lib/YAML/LibYAML.pm blib/lib/YAML/LibYAML.pm
+"/usr/bin/perl" "/usr/share/perl/5.28.1/ExtUtils/xsubpp"  -typemap '/usr/share/perl/5.28/ExtUtils/typemap'  LibYAML.xs > LibYAML.xsc
+chmod 644 "LibYAML.bs"
+"/usr/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- LibYAML.bs ../blib/arch/auto/YAML/XS/LibYAML/LibYAML.bs 644
+cp lib/YAML/XS/LibYAML.pm ../blib/lib/YAML/XS/LibYAML.pm
+mv LibYAML.xsc LibYAML.c
+icc.pl -c  -I. -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fwrapv -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -g -O2 -fdebug-prefix-map=/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack=. -Wformat -march=native -pipe -Wformat-security -Wdate-time -D_FORTIFY_SOURCE=2   -DVERSION=\"\" -DXS_VERSION=\"\" -fPIC "-I/usr/lib/x86_64-linux-gnu/perl/5.28/CORE"  -DHAVE_CONFIG_H LibYAML.c
+rm -f ../blib/arch/auto/YAML/XS/LibYAML/LibYAML.so
+icc.pl -g -O2 -fdebug-prefix-map=/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack=. -Wformat -march=native -pipe -Wformat-security -Wl,-z,now  -shared -L/usr/local/lib  perl_libyaml.o LibYAML.o  -o ../blib/arch/auto/YAML/XS/LibYAML/LibYAML.so  \
+   -lyaml   \
+  
+x86_64-linux-gnu-ld: /lib/x86_64-linux-gnu/libz.so.1: no version information available (required by /usr/lib/x86_64-linux-gnu/libbfd-2.31.1-system.so)
+chmod 755 ../blib/arch/auto/YAML/XS/LibYAML/LibYAML.so
+Manifying 1 pod document
+make[2]: Leaving directory '/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/LibYAML'
+Manifying 2 pod documents
+make[1]: Leaving directory '/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack'
+   dh_auto_test
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+	rm -f -- debian/libyaml-libyaml-perl.substvars
+	rm -fr -- debian/.debhelper/generated/libyaml-libyaml-perl/ debian/libyaml-libyaml-perl/ debian/tmp/
+   dh_auto_install
+	install -d /dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76\+repack/debian/libyaml-libyaml-perl
+	make -j8 install DESTDIR=/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76\+repack/debian/libyaml-libyaml-perl AM_UPDATE_INFO_DIR=no PREFIX=/usr
+make[1]: Entering directory '/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack'
+make[2]: Entering directory '/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/LibYAML'
+"/usr/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- LibYAML.bs ../blib/arch/auto/YAML/XS/LibYAML/LibYAML.bs 644
+Manifying 1 pod document
+make[2]: Leaving directory '/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/LibYAML'
+Manifying 2 pod documents
+Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
+Installing /dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/debian/libyaml-libyaml-perl/usr/lib/x86_64-linux-gnu/perl5/5.28/auto/YAML/XS/LibYAML/LibYAML.so
+Installing /dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/debian/libyaml-libyaml-perl/usr/lib/x86_64-linux-gnu/perl5/5.28/auto/YAML/XS/LibYAML/LibYAML.so.response
+Installing /dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/debian/libyaml-libyaml-perl/usr/lib/x86_64-linux-gnu/perl5/5.28/YAML/LibYAML.pm
+Installing /dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/debian/libyaml-libyaml-perl/usr/lib/x86_64-linux-gnu/perl5/5.28/YAML/XS.pm
+Installing /dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/debian/libyaml-libyaml-perl/usr/lib/x86_64-linux-gnu/perl5/5.28/YAML/XS.pod
+Installing /dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/debian/libyaml-libyaml-perl/usr/lib/x86_64-linux-gnu/perl5/5.28/YAML/LibYAML.pod
+Installing /dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/debian/libyaml-libyaml-perl/usr/lib/x86_64-linux-gnu/perl5/5.28/YAML/XS/LibYAML.pm
+Installing /dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::XS.3pm
+Installing /dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::LibYAML.3pm
+Installing /dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack/debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::XS::LibYAML.3pm
+make[1]: Leaving directory '/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack'
+   dh_installdocs
+	install -d debian/libyaml-libyaml-perl/usr/share/doc/libyaml-libyaml-perl
+	install -d debian/.debhelper/generated/libyaml-libyaml-perl
+	install -p -m0644 debian/copyright debian/libyaml-libyaml-perl/usr/share/doc/libyaml-libyaml-perl/copyright
+   dh_installchangelogs
+	install -p -m0644 debian/changelog debian/libyaml-libyaml-perl/usr/share/doc/libyaml-libyaml-perl/changelog.Debian
+	install -p -m0644 ./Changes debian/libyaml-libyaml-perl/usr/share/doc/libyaml-libyaml-perl/changelog
+   dh_installman
+	man -l --recode UTF-8 ./debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::XS::LibYAML.3pm > debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::XS::LibYAML.3pm.dh-new
+	man -l --recode UTF-8 ./debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::LibYAML.3pm > debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::LibYAML.3pm.dh-new
+	man -l --recode UTF-8 ./debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::XS.3pm > debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::XS.3pm.dh-new
+	mv debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::XS.3pm.dh-new debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::XS.3pm
+	chmod 0644 -- debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::XS.3pm
+	mv debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::LibYAML.3pm.dh-new debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::LibYAML.3pm
+	chmod 0644 -- debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::LibYAML.3pm
+	mv debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::XS::LibYAML.3pm.dh-new debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::XS::LibYAML.3pm
+	chmod 0644 -- debian/libyaml-libyaml-perl/usr/share/man/man3/YAML::XS::LibYAML.3pm
+   dh_perl
+	(grep -a -s -v perl:Depends debian/libyaml-libyaml-perl.substvars; echo "perl:Depends=perl (>= 5.28.1-3)") > debian/libyaml-libyaml-perl.substvars.new
+	mv debian/libyaml-libyaml-perl.substvars.new debian/libyaml-libyaml-perl.substvars
+	(grep -a -s -v perl:Depends debian/libyaml-libyaml-perl.substvars; echo "perl:Depends=perl (>= 5.28.1-3), perlapi-5.28.1") > debian/libyaml-libyaml-perl.substvars.new
+	mv debian/libyaml-libyaml-perl.substvars.new debian/libyaml-libyaml-perl.substvars
+	rmdir --ignore-fail-on-non-empty --parents debian/libyaml-libyaml-perl/usr/lib/x86_64-linux-gnu/perl5/5.28
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+	cd debian/libyaml-libyaml-perl
+	chmod a-x usr/share/doc/libyaml-libyaml-perl/changelog usr/share/doc/libyaml-libyaml-perl/changelog.Debian usr/share/man/man3/YAML::LibYAML.3pm usr/share/man/man3/YAML::XS.3pm usr/share/man/man3/YAML::XS::LibYAML.3pm
+	gzip -9nf usr/share/doc/libyaml-libyaml-perl/changelog usr/share/doc/libyaml-libyaml-perl/changelog.Debian usr/share/man/man3/YAML::LibYAML.3pm usr/share/man/man3/YAML::XS.3pm usr/share/man/man3/YAML::XS::LibYAML.3pm
+	cd '/dev/shm/apt/libyaml-libyaml-perl/libyaml-libyaml-perl-0.76+repack'
+   dh_fixperms
+	find debian/libyaml-libyaml-perl -true -print0 2>/dev/null | xargs -0r chown --no-dereference 0:0
+	find debian/libyaml-libyaml-perl ! -type l -a -true -a -true -print0 2>/dev/null | xargs -0r chmod go=rX,u+rw,a-s
+	find debian/libyaml-libyaml-perl/usr/share/doc -type f -a -true -a ! -regex 'debian/libyaml-libyaml-perl/usr/share/doc/[^/]*/examples/.*' -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/libyaml-libyaml-perl/usr/share/doc -type d -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0755
+	find debian/libyaml-libyaml-perl/usr/share/man -type f -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/libyaml-libyaml-perl/usr/lib/x86_64-linux-gnu/perl5/5.28 -type f -perm -5 -name '*.pm' -a -true -a -true -print0 2>/dev/null | xargs -0r chmod a-X
+	find debian/libyaml-libyaml-perl -type f \( -name '*.so.*' -o -name '*.so' -o -name '*.la' -o -name '*.a' -o -name '*.js' -o -name '*.css' -o -name '*.scss' -o -name '*.sass' -o -name '*.jpeg' -o -name '*.jpg' -o -name '*.png' -o -name '*.gif' -o -name '*.cmxs' \) -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/libyaml-libyaml-perl/usr/lib -type f -name '*.ali' -a -true -a -true -print0 2>/dev/null | xargs -0r chmod uga-w
+   dh_missing
+   dh_strip
+	install -d debian/.debhelper/libyaml-libyaml-perl/dbgsym-root/usr/lib/debug/.build-id/85
+	objcopy --only-keep-debug --compress-debug-sections debian/libyaml-libyaml-perl/usr/lib/x86_64-linux-gnu/perl5/5.28/auto/YAML/XS/LibYAML/LibYAML.so debian/.debhelper/libyaml-libyaml-perl/dbgsym-root/usr/lib/debug/.build-id/85/112737dec4afe767260db658cc20e2ae8a5578.debug
+objcopy: /lib/x86_64-linux-gnu/libz.so.1: no version information available (required by /usr/lib/x86_64-linux-gnu/libbfd-2.31.1-system.so)
+	chmod 0644 -- debian/.debhelper/libyaml-libyaml-perl/dbgsym-root/usr/lib/debug/.build-id/85/112737dec4afe767260db658cc20e2ae8a5578.debug
+	chown 0:0 -- debian/.debhelper/libyaml-libyaml-perl/dbgsym-root/usr/lib/debug/.build-id/85/112737dec4afe767260db658cc20e2ae8a5578.debug
+	strip --remove-section=.comment --remove-section=.note --strip-unneeded debian/libyaml-libyaml-perl/usr/lib/x86_64-linux-gnu/perl5/5.28/auto/YAML/XS/LibYAML/LibYAML.so
+strip: /lib/x86_64-linux-gnu/libz.so.1: no version information available (required by /usr/lib/x86_64-linux-gnu/libbfd-2.31.1-system.so)
+	objcopy --add-gnu-debuglink debian/.debhelper/libyaml-libyaml-perl/dbgsym-root/usr/lib/debug/.build-id/85/112737dec4afe767260db658cc20e2ae8a5578.debug debian/libyaml-libyaml-perl/usr/lib/x86_64-linux-gnu/perl5/5.28/auto/YAML/XS/LibYAML/LibYAML.so
+objcopy: /lib/x86_64-linux-gnu/libz.so.1: no version information available (required by /usr/lib/x86_64-linux-gnu/libbfd-2.31.1-system.so)
+	install -d debian/.debhelper/libyaml-libyaml-perl/dbgsym-root/usr/share/doc
+	ln -s libyaml-libyaml-perl debian/.debhelper/libyaml-libyaml-perl/dbgsym-root/usr/share/doc/libyaml-libyaml-perl-dbgsym
+   dh_makeshlibs
+	rm -f debian/libyaml-libyaml-perl/DEBIAN/shlibs
+objdump: /lib/x86_64-linux-gnu/libz.so.1: no version information available (required by /usr/lib/x86_64-linux-gnu/libbfd-2.31.1-system.so)
+   dh_shlibdeps
+	install -d debian/libyaml-libyaml-perl/DEBIAN
+	dpkg-shlibdeps -Tdebian/libyaml-libyaml-perl.substvars debian/libyaml-libyaml-perl/usr/lib/x86_64-linux-gnu/perl5/5.28/auto/YAML/XS/LibYAML/LibYAML.so
+objdump: /lib/x86_64-linux-gnu/libz.so.1: no version information available (required by /usr/lib/x86_64-linux-gnu/libbfd-2.31.1-system.so)
+   dh_installdeb
+   dh_gencontrol
+	echo misc:Depends= >> debian/libyaml-libyaml-perl.substvars
+	echo misc:Pre-Depends= >> debian/libyaml-libyaml-perl.substvars
+	install -d debian/.debhelper/libyaml-libyaml-perl/dbgsym-root/DEBIAN
+	dpkg-gencontrol -plibyaml-libyaml-perl -ldebian/changelog -Tdebian/libyaml-libyaml-perl.substvars -Pdebian/.debhelper/libyaml-libyaml-perl/dbgsym-root -UPre-Depends -URecommends -USuggests -UEnhances -UProvides -UEssential -UConflicts -DPriority=optional -UHomepage -UImportant -DAuto-Built-Package=debug-symbols -DPackage=libyaml-libyaml-perl-dbgsym "-DDepends=libyaml-libyaml-perl (= \${binary:Version})" "-DDescription=debug symbols for libyaml-libyaml-perl" -DBuild-Ids=85112737dec4afe767260db658cc20e2ae8a5578 -DSection=debug -UMulti-Arch -UReplaces -UBreaks
+	chmod 0644 -- debian/.debhelper/libyaml-libyaml-perl/dbgsym-root/DEBIAN/control
+	chown 0:0 -- debian/.debhelper/libyaml-libyaml-perl/dbgsym-root/DEBIAN/control
+	dpkg-gencontrol -plibyaml-libyaml-perl -ldebian/changelog -Tdebian/libyaml-libyaml-perl.substvars -Pdebian/libyaml-libyaml-perl -UMulti-Arch
+	chmod 0644 -- debian/libyaml-libyaml-perl/DEBIAN/control
+	chown 0:0 -- debian/libyaml-libyaml-perl/DEBIAN/control
+   dh_md5sums
+	cd debian/libyaml-libyaml-perl >/dev/null && xargs -r0 md5sum | perl -pe 'if (s@^\\@@) { s/\\\\/\\/g; }' > DEBIAN/md5sums
+	chmod 0644 -- debian/libyaml-libyaml-perl/DEBIAN/md5sums
+	chown 0:0 -- debian/libyaml-libyaml-perl/DEBIAN/md5sums
+	cd debian/.debhelper/libyaml-libyaml-perl/dbgsym-root >/dev/null && xargs -r0 md5sum | perl -pe 'if (s@^\\@@) { s/\\\\/\\/g; }' > DEBIAN/md5sums
+	chmod 0644 -- debian/.debhelper/libyaml-libyaml-perl/dbgsym-root/DEBIAN/md5sums
+	chown 0:0 -- debian/.debhelper/libyaml-libyaml-perl/dbgsym-root/DEBIAN/md5sums
+   dh_builddeb
+	dpkg-deb --build debian/libyaml-libyaml-perl ..
+	dpkg-deb --build debian/.debhelper/libyaml-libyaml-perl/dbgsym-root ..
+dpkg-deb: building package 'libyaml-libyaml-perl-dbgsym' in '../libyaml-libyaml-perl-dbgsym_0.76+repack-1_amd64.deb'.
+dpkg-deb: building package 'libyaml-libyaml-perl' in '../libyaml-libyaml-perl_0.76+repack-1_amd64.deb'.
+FAKEROOTKEY=942489470 LD_LIBRARY_PATH= LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libfakeroot/libfakeroot-sysv.so debian/rules binary
+ dpkg-genbuildinfo --build=binary
+ dpkg-genchanges --build=binary >../libyaml-libyaml-perl_0.76+repack-1_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now running lintian libyaml-libyaml-perl_0.76+repack-1_amd64.changes ...
+strings: /lib/x86_64-linux-gnu/libz.so.1: no version information available (required by /usr/lib/x86_64-linux-gnu/libbfd-2.31.1-system.so)
+/usr/bin/ar: /lib/x86_64-linux-gnu/libz.so.1: no version information available (required by /usr/lib/x86_64-linux-gnu/libbfd-2.31.1-system.so)
+/usr/bin/ar: /lib/x86_64-linux-gnu/libz.so.1: no version information available (required by /usr/lib/x86_64-linux-gnu/libbfd-2.31.1-system.so)
+/usr/bin/ar: /lib/x86_64-linux-gnu/libz.so.1: no version information available (required by /usr/lib/x86_64-linux-gnu/libbfd-2.31.1-system.so)
+/usr/bin/ar: /lib/x86_64-linux-gnu/libz.so.1: no version information available (required by /usr/lib/x86_64-linux-gnu/libbfd-2.31.1-system.so)
+Finished running lintian.

@@ -1,0 +1,23 @@
+Description: disable maintainer helper script
+Origin: vendor
+Forwarded: not-needed
+Author: gregor herrmann <gregoa@debian.org>
+Last-Update: 2013-10-11
+
+--- a/LibYAML/Makefile.PL
++++ b/LibYAML/Makefile.PL
+@@ -2,10 +2,10 @@
+ use strict;
+ use Config;
+ 
+-if (-d '../.git') {
+-    system("./update.sh") == 0
+-        or die "update.sh failed";
+-}
++#if (-d '../.git') {
++#    system("./update.sh") == 0
++#        or die "update.sh failed";
++#}
+ 
+ my $obj_files = join ' ', map {
+     my $c = $_;

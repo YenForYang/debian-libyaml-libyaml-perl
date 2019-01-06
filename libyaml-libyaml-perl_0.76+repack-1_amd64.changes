@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Thu, 03 Jan 2019 23:56:13 +0100
+Source: libyaml-libyaml-perl
+Binary: libyaml-libyaml-perl
+Built-For-Profiles: nobiarch nocheck nodoc
+Architecture: amd64
+Version: 0.76+repack-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: gregor herrmann <gregoa@debian.org>
+Description:
+ libyaml-libyaml-perl - Perl interface to libyaml, a YAML implementation
+Changes:
+ libyaml-libyaml-perl (0.76+repack-1) unstable; urgency=medium
+ .
+   * Import upstream version 0.76+repack.
+   * Refresh system-libyaml.patch (offset).
+   * Update years of packaging copyright.
+   * Declare compliance with Debian Policy 4.3.0.
+Checksums-Sha1:
+ c0d0822b91ccb3e3899f9e3b7a982569111f8fed 39228 libyaml-libyaml-perl-dbgsym_0.76+repack-1_amd64.deb
+ 6e67fe7119868de05136c515098fa2aa9ae138c7 5684 libyaml-libyaml-perl_0.76+repack-1_amd64.buildinfo
+ 4223d369de53aa0354f35a53e1490437a553210c 35020 libyaml-libyaml-perl_0.76+repack-1_amd64.deb
+Checksums-Sha256:
+ 37308755f74d46a4f7e28b26200d1e86daa1ff8820218643618bb9a7dd79eaf2 39228 libyaml-libyaml-perl-dbgsym_0.76+repack-1_amd64.deb
+ b91a44a168276615f10d6e12e74db3c9dc229b657b31466cec4d2ef059983aba 5684 libyaml-libyaml-perl_0.76+repack-1_amd64.buildinfo
+ 8945d95878ee427c8d4cd0b29cce2ee8d3ffb2128f1c3a3b8eb493883b7f1a47 35020 libyaml-libyaml-perl_0.76+repack-1_amd64.deb
+Files:
+ fc04d28f1bfe0b485e8520a962173080 39228 debug optional libyaml-libyaml-perl-dbgsym_0.76+repack-1_amd64.deb
+ bbed479dc8754fd5b59b997833135a37 5684 perl optional libyaml-libyaml-perl_0.76+repack-1_amd64.buildinfo
+ 31ea18918f1a5622e1a4e3c18cb07f09 35020 perl optional libyaml-libyaml-perl_0.76+repack-1_amd64.deb

@@ -1,0 +1,10 @@
+-g
+-Wformat
+-Wformat-security
+-Wl,-z,now
+-shared
+-L/usr/local/lib
+perl_libyaml.o
+LibYAML.o
+-o../blib/arch/auto/YAML/XS/LibYAML/LibYAML.so
+-lyaml

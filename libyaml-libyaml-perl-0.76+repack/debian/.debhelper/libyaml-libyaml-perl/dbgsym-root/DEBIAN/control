@@ -1,0 +1,12 @@
+Package: libyaml-libyaml-perl-dbgsym
+Source: libyaml-libyaml-perl
+Version: 0.76+repack-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 56
+Depends: libyaml-libyaml-perl (= 0.76+repack-1)
+Section: debug
+Priority: optional
+Description: debug symbols for libyaml-libyaml-perl
+Build-Ids: 85112737dec4afe767260db658cc20e2ae8a5578
